@@ -1,6 +1,16 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
+:root {
+    --highlight: #e20e8d;
+    --background: #fb1;
+    --color-title: #222222;
+    --white: #eeeeee;
+    --container: 100rem;
+    --small: 1.5rem;
+    --medium: 3rem;
+    --large: 5rem;
+  }
   * {
     margin: 0;
     padding: 0;
