@@ -1,22 +1,38 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Body = styled.section`
+export const Container = styled.section`
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2rem;
+  margin: 0 auto;
+  .list-suggestion {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    a {
+      background: var(--green-sheen);
+      padding: 5rem 2rem;
+      border-radius: 0.25rem;
+      text-decoration: none;
+      transition: .2s;
+      &:hover{
+        filter: brightness(80%)
+      }
+    }
+  }
+  h1 {
+    color: var(--color-title);
+    font-size: var(--medium);
+    text-align: center;
+    margin: 4rem 0;
+  }
+  h4 {
+    font-size: var(--small);
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--beige);
+    text-transform: uppercase;
+    text-align: center;
+  }
 
-h1{
- color:var(--color-title);
- font-size:(--medium);
-}
-h4{
-  font-size: 18px;
-    line-height: 22px;
-    max-height: 44px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    color: rgb(34, 34, 34);
-    font-weight: 600;
-    white-space: pre-line;
-}
-`
+`;

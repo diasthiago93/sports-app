@@ -1,7 +1,11 @@
-import Main from 'components/Main'
+import About from 'components/About'
+import Suggestion from 'components/Suggestion'
 
 export default function Home() {
   return (
-    <Main />
+    <>
+    <Suggestion/>
+    <About/>  
+    </>
   )
 }
